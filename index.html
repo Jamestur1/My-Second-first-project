@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
     <section>
         <nav>
-            <img src="./assets/FES.svg" alt="">
+            <img src="./assets/FES.svg" class="logo" alt="">
             <ul>
                 <li><a href="#about">About</a></li>
                 <li><a href="#discord">Discord</a></li>
@@ -16,61 +17,72 @@
             </ul>
         </nav>
         <header>
+            <div class="row">
             <div>
                 <h1>Best Place to Learn Frontend</h1>
-                <p>Go from absolute beginner to pro with a simplified process.</p>
+                <p class="subheader">Go from absolute beginner to pro with a simplified process.</p>
                 <button>Start Now</button>
             </div>
             <figure>
                 <img src="./assets/laptop.png" alt="">
             </figure>
-        </header>
-    </section>
+        </div>
+    </header>
+ </section>
 
     <main>
         <section id="about">
             <h2>About</h2>
-            <div>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione unde inventore alias corporis, nam similique ex voluptas sint ut reprehenderit non quisquam est! Enim fugit accusamus quisquam corporis omnis? Dolor.</p>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione unde inventore alias corporis, nam similique ex voluptas sint ut reprehenderit non quisquam est! Enim fugit accusamus quisquam corporis omnis? Dolor.</p>
-            </div>
-            <figure>
+            <div class="row">
+            <div class="section__description">
+             <div class="section__description--wrapper">
+                <p class="section__description--para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione unde inventore alias corporis, nam similique ex voluptas sint ut reprehenderit non quisquam est! Enim fugit accusamus quisquam corporis omnis? Dolor.</p>
+                <p class="section__description--para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione unde inventore alias corporis, nam similique ex voluptas sint ut reprehenderit non quisquam est! Enim fugit accusamus quisquam corporis omnis? Dolor.</p>
+             </div>
+            <figure class="about__img--wrapper">
                 <img src="./assets/about.jpg" alt="">
             </figure>
+              </div>
+            </div>
         </section>
+
 
         <section id="discord">
             <h2>Discord</h2>
-               <figure>
+            <div class="row">
+            <div class="section__description">
+               <figure class="about__img--wrapper">
                     <img src="./assets/discord.png" alt="">
                 </figure>
-                <div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, corporis iste adipisci vero eos eaque. Omnis, doloremque accusamus dolorum vel inventore, perspiciatis vero recusandae reprehenderit ab quibusdam alias! Quasi, officia?</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro est provident delectus. Minus ullam, sapiente rerum magnam officia, ipsa eius, exercitationem mollitia dolorum ea vero. Dicta totam ea vel architecto.</p>
+                <div class="section__description--wrapper">
+                    <p class="section__description--para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, corporis iste adipisci vero eos eaque. Omnis, doloremque accusamus dolorum vel inventore, perspiciatis vero recusandae reprehenderit ab quibusdam alias! Quasi, officia?</p>
+                    <p class="section__description--para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro est provident delectus. Minus ullam, sapiente rerum magnam officia, ipsa eius, exercitationem mollitia dolorum ea vero. Dicta totam ea vel architecto.</p>
                 </div>
+             </div>
+            </div>
         </section>
 
         <section id="contact">
             <h2>Contact</h2>
             <form action="">
                 <span>Email</span>
-                <input type="text" placeholder="James@example.com">
+                <input type="email" placeholder="James@example.com">
                 <span>Message</span>
-                <textarea type="text" placeholder="James@example.com"></textarea>
+                <textarea type="text" placeholder="cool website let's get connected"></textarea>
+                <button>Contact Us!</button>
             </form>
         </section>
     </main>
 <footer>
-    <img src="./assets/FES.svg" alt="">
-    <div>
-        <a href="#about">About</a>
-        <a href="#discord">Discord</a>
-        <a href="#contact">Contact</a>
-        <a href="">Courses</a>
+    <img class="footer__logo" src="./assets/FES.svg" alt="">
+    <div class="footer__links">
+        <a class="footer__link" href="#about">About</a>
+        <a class="footer__link" href="#discord">Discord</a>
+        <a class="footer__link" href="#contact">Contact</a>
+        <a class="footer__link" href="">Courses</a>
     </div>
     <p>&copy; 2023 Frontend Simplified</p>
 </footer>
-
 
 </body>
 </html>
